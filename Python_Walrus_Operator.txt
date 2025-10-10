@@ -1,0 +1,44 @@
+Topic: The Walrus Operator — introduced in Python 3.8
+
+What It Does:
+
+Assigns a value and uses it in the same expression.
+
+Avoids repeating the same code twice.
+
+Example 1 — Input Loop
+
+# Without Walrus
+data = input("Enter data: ")
+while data != "quit":
+    print(data)
+    data = input("Enter data: ")
+
+# With Walrus
+while (data := input("Enter data: ")) != "quit":
+    print(data)
+
+
+Sample Run
+
+Enter data: Monday
+Monday
+Enter data: Tuesday
+Tuesday
+Enter data: quit
+
+
+Example 2 — List Comprehension
+
+words = ["apple", "bat", "cat"]
+numbers = [n := len(word) for word in words if n > 3]
+print(numbers)
+
+
+Output
+
+[5]  # Only "apple" has length > 3
+
+
+Why It’s Useful:
+Makes code concise and readable by combining assignment and evaluation in one line.

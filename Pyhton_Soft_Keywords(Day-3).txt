@@ -1,0 +1,43 @@
+Topic: Understanding Python Soft Keywords 💡
+
+What I Learned:
+
+Hard keywords (like if, for, while) are always reserved.
+
+Soft keywords act as keywords only in specific contexts — outside those, you can use them as normal variable names.
+
+🧩 Soft Keywords in Python
+
+Keyword	Introduced In	Used For	Can Be Variable Name?
+match	Python 3.10	Match-case statement	✅ Yes
+case	Python 3.10	Pattern matching	✅ Yes
+_	Python 3.10	Default (catch-all) case	✅ Yes
+type	Python 3.12	Type aliases	✅ Yes
+
+Example
+
+# ✅ Soft keywords as normal variables
+match = "I'm a variable"
+case = "Me too"
+type = "I'm also a variable"
+print(match, case, type)
+
+# ✅ Soft keywords used as keywords
+action = "start"
+match action:
+    case "start":
+        print("Starting the program")
+    case "stop":
+        print("Stopping the program")
+    case _:
+        print("Unknown command")
+
+
+Output
+
+I'm a variable Me too I'm also a variable
+Starting the program
+
+
+Why It’s Important:
+Soft keywords make Python flexible and backward-compatible — older code won’t break even when new keywords are added.
