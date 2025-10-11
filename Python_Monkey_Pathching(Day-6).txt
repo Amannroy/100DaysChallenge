@@ -1,0 +1,75 @@
+What is Monkey Patching?
+Changing or replacing a function/method of a class at runtime (while the program is running) — without modifying the original source code.
+
+
+Why Use Monkey Patching?
+
+✅Use Cases
+
+Testing / Mocking → Replace slow or real API calls with fake fast ones
+
+Temporary Fixes → Bypass a bug in an external library
+
+Add Features → Extend or change behavior temporarily
+
+Be Careful
+
+Makes code confusing for others
+
+Can cause unexpected bugs
+
+Should be temporary, not permanent
+
+Example-> Replacing slow function
+class ExternalService:
+    def fetch_data(self):
+      print("Starting slow network call...")
+      time.sleep(5)  # Slow netwrok call
+      return "Real data from server"
+
+api_service = ExternalService()
+
+
+
+Better Code:
+
+def mock_fetch_data(self):
+   print("Mock: Bypassing network call")
+   return "Mock test data"
+
+
+# ==== Monkey Patching ====
+api_service.fetch_data = mock_fetch_data  # Replace with our own function
+
+# === Result =====
+result = api_service.fetch_data()  # Calls our fast mock version
+print(result)  # Output: Mock test data
+
+Output:
+
+Mock: Bypassing network call
+Mock test data
+
+
+Time Taken: ~0 seconds(instead of 5 seconds)
+
+How It Works
+1	External function is slow (can’t modify library code)
+2	You define your own fast version
+3	You assign your function to replace the original one at runtime
+
+->➡️ api_service.fetch_data = mock_fetch_data
+
+Now, whenever fetch_data() is called → it runs my function!
+
+
+
+Key Takeaways
+
+Python lets you modify attributes at runtime (very flexible)
+
+Monkey patching is not permanent (lasts only while program runs)
+
+Great for testing, debugging, and temporary fixes
+
+Avoid overusing in production — document clearly when you use it
