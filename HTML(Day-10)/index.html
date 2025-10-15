@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+    
+    <!-- Makes the page responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title shown in the browser tab -->
+    <title>My First HTML Page</title>
+</head>
+
+<body>
+    <!-- Main heading of the page -->
+    <h1>Welcome</h1>
+
+    <!-- Subheading -->
+    <h2>Glad to see you here!</h2>
+
+    <!-- A simple paragraph -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, quibusdam!</p>
+
+    <!-- Unordered list: items appear with bullet points -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Black Tea</li>
+        <li>Green Tea</li>
+    </ul>
+
+    <!-- Ordered list: items appear with numbers -->
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Black Tea</li>
+        <li>Green Tea</li>
+    </ol>
+
+    <!-- Anchor tag: creates a clickable link -->
+    <!-- target="_blank" opens it in a new tab -->
+    <p>
+        Visit:
+        <a href="https://premium.mysirg.com" target="_blank" rel="noopener noreferrer">
+            MySirG Premium Website
+        </a>
+    </p>
+
+    <!-- Image tag: displays an image -->
+    <!-- alt provides text if the image doesn't load -->
+    <img src="./pic1.png" alt="MySirG Image" width="300">
+
+    <!-- Table to display data in rows and columns -->
+    <h3>Student Details</h3>
+    <table border="1" cellpadding="5">
+        <!-- Table header section -->
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <!-- Table body section -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ramesh</td>
+                <td>Delhi</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Suresh</td>
+                <td>Dehradun</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vijay</td>
+                <td>Mumbai</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kapil</td>
+                <td>Rajasthan</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- A simple HTML form -->
+    <h3>Registration Form</h3>
+    <!-- action attribute defines where to send form data -->
+    <!-- method="get" sends data through the URL -->
+    <form action="https://mysirg.com/hello.py" method="get">
+
+        <!-- Text input for name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="username" placeholder="Enter your name">
+        <br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="userpass" placeholder="Enter password">
+        <br><br>
+
+        <!-- Radio buttons for gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Dropdown (select) menu for city -->
+        <label for="city">City:</label>
+        <select name="city" id="city">
+            <option value="bhopal">Bhopal</option>
+            <option value="pune">Pune</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="mumbai">Mumbai</option>
+        </select>
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- A long paragraph for practice -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias distinctio eius voluptatum sapiente 
+        qui explicabo quis quam pariatur aspernatur tempora nemo natus ipsum optio at reprehenderit ducimus 
+        soluta neque enim dolorum, magnam vitae quod. Nam officia maiores assumenda odit voluptatibus vero? 
+        Necessitatibus, quas temporibus sed ipsa eos alias assumenda fugit voluptate saepe dolorem voluptatem 
+        quo neque laudantium at repellendus fuga, impedit atque ab voluptas?
+    </p>
+</body>
+</html>
