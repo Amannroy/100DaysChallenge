@@ -128,7 +128,7 @@ console.log("Queue size:", q.getSize());
 console.log("Queue elements:");
 q.printQueue();  // 10 <- 20 <- 30 <- 40 <- 50
 
-// Test dequeue
+// Test dequeue 
 console.log("\nDequeued:", q.dequeue());
 console.log("Queue after dequeue:");
 q.printQueue(); // 20 <- 30 <- 40 <- 50
