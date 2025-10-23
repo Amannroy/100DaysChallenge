@@ -1,0 +1,94 @@
+PRIORITY QUEUE 
+
+Priority Queue works like a VIP line — not first-come-first-served.
+People are served based on importance (priority), not arrival time.
+
+✅ Real-life Examples:
+
+🚑 Hospital: Critical patients first
+
+💻 CPU Scheduling: Important tasks get CPU first
+
+📋 Task Manager: Urgent tasks > normal ones
+
+🧱 Foundation: Min Heap
+
+Priority Queue is usually built using a Min Heap, because:
+
+Smallest number (highest priority) is always at the top
+
+Automatically reorganizes itself when we add/remove items
+
+Fast: O(log n)
+
+🛑 Min Heap Rule:
+
+Parent < Children
+This one rule keeps everything organized!
+
+🔄 Two Core Operations
+1️⃣ Bubble Up (After Insert)
+
+Like a talented new employee getting promotions.
+
+Steps:
+
+New item added at bottom
+
+Compare with parent
+
+If priority is higher (number is smaller), swap
+
+Repeat until correct position
+
+2️⃣ Sink Down (After Removal)
+
+Like someone temporarily acting as CEO but getting pushed to their correct level.
+
+Steps:
+
+Remove root (highest priority item)
+
+Move last item to top
+
+Compare with children
+
+Swap with smaller child
+
+Repeat until it's in correct place
+
+🛠️ From Min Heap ➝ Priority Queue
+
+We don't store just values. We store objects like:
+
+{ data: "Task Name", priority: 3 }
+
+
+Only change we make:
+💡 Instead of comparing values → compare item.priority
+
+Everything else (bubble up, sink down, parent-child formula) stays the same!
+
+💡 Priority Logic
+
+✅ Lower number = Higher priority
+
+Priority 1 → most important
+
+Or reverse using Max Heap (optional)
+
+⚡ Performance
+Operation	Time
+Insert	O(log n)
+Remove	O(log n)
+Peek (get top)	O(1)
+
+Why log n? Because heap is a balanced tree!
+
+🧠 Easy Mental Model
+Concept	Simple Idea
+Bubble Up	Promotion for deserving employee
+Sink Down	Underqualified leader moves down
+Heap Property	Parent is always smaller than children
+Array Storage	Tree stored in array using formulas
+Priority Queue	Heap + compare .priority instead of va
