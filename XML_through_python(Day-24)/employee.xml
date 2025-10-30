@@ -1,0 +1,19 @@
+<employees>
+   <employee status="active">
+        <name>Rahul</name>
+        <age>26</age>
+        <gender>Male</gender>
+        <email>rahul@gmail.com</email>
+        <phone>2345678945</phone>
+        <address>61, North Campus, Hyderabad, India</address>
+    </employee>
+
+    <employee status="inactive">
+        <name>Rohit</name>
+        <age>32</age>
+        <gender>Male</gender>
+        <email>rohit@gmail.com</email>
+        <phone>8765432167</phone>
+        <address>123, Brigade Road, Bengaluru, India</address>
+    </employee>
+</employees>
