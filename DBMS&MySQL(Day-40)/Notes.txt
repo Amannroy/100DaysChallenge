@@ -1,0 +1,61 @@
+What is the Main Problem?
+When you build software projects, you need to store data permanently. For example, if you make a library management system, you need to save information about books even after closing the program. Otherwise, when your program ends, all data in variables disappears.
+Solution 1: File Handling
+You can save data in files on your hard disk. But this approach has problems:
+
+Complex coding - You need to write lots of extra code just to manage files
+High risk of errors - Easy to make mistakes
+Hard to maintain relationships - If you delete a member who has borrowed a book, you need to check multiple files and update them properly
+
+Solution 2: Database Management System (DBMS)
+Instead of writing all that complex file-handling code yourself, use ready-made software like MySQL that does this job for you!
+What is a Database?
+A collection of files where you store all your business data.
+What is DBMS?
+Software that manages your database - handles all the file operations, security, updates, and deletions for you.
+Why Use MySQL?
+Benefits:
+
+Saves development time
+Reduces errors
+Less testing needed
+Handles complex operations automatically
+Even if it costs money, it's worth it because it's the most difficult part of the project
+
+How Does It Work?
+Instead of working directly with files, you:
+
+Send commands to MySQL using SQL language (Structured Query Language)
+MySQL manages everything in the background
+You think of data as tables (rows and columns), not files
+
+Understanding Tables
+Think of a table like an Excel spreadsheet:
+
+Columns = types of information (like Roll Number, Name, Email)
+Rows = individual records (each student)
+Field = one piece of data
+Record = complete row of information
+
+Table Relationships
+Tables can be connected! For example:
+
+Students table has student info
+Batch table has course info
+They connect using Roll Number (Primary Key)
+This prevents data duplication and keeps everything consistent
+
+Getting Started with MySQL
+Installation steps:
+
+Search "how to install MySQL"
+Download from official MySQL website
+Follow setup wizard (click next, next...)
+
+Basic Commands:
+mysql -u root -p          // Login to MySQL
+show databases;           // See all databases
+use db1;                  // Select a database
+show tables;              // See tables in database
+describe book;            // See structure of 'book' table
+status;                   // Check connection details
