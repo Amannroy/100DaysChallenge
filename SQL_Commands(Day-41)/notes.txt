@@ -1,0 +1,127 @@
+MySQL Basic CRUD Operations - Complete Notes
+What is CRUD?
+CRUD stands for four basic database operations:
+
+C = Create (Insert new data)
+R = Read (View data)
+U = Update (Modify existing data)
+D = Delete (Remove data)
+
+
+Getting Started
+1. Check MySQL Installation
+bashmysql --version
+2. Login to MySQL
+bashmysql -u root -p
+Then enter your password (set during MySQL installation)
+
+Basic Commands
+Show All Databases
+sqlSHOW DATABASES;
+Create New Database
+sqlCREATE DATABASE DB5;
+Select/Use a Database
+sqlUSE DB5;
+Show All Tables in Current Database
+sqlSHOW TABLES;
+
+1. CREATE TABLE
+Syntax:
+sqlCREATE TABLE table_name (
+    column1 datatype constraints,
+    column2 datatype constraints,
+    ...
+);
+Example:
+sqlCREATE TABLE product (
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(6,2),
+    quantity INT
+);
+Key Points:
+
+INT = Integer (whole numbers)
+VARCHAR(100) = Text up to 100 characters
+DECIMAL(6,2) = Decimal number (6 total digits, 2 after decimal point)
+PRIMARY KEY = Unique identifier for each row
+AUTO_INCREMENT = Automatically increases value (1, 2, 3...)
+NOT NULL = Field cannot be empty
+Capital/small letters don't matter in SQL commands
+Always end commands with semicolon (;)
+
+View Table Structure
+sqlDESCRIBE product;
+
+2. INSERT (Create/Add Data)
+Syntax:
+sqlINSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
+Examples:
+sqlINSERT INTO product (name, price, quantity)
+VALUES ('Coconut Oil', 126.00, 20);
+
+INSERT INTO product (name, price, quantity)
+VALUES ('Colgate Toothpaste', 200.00, 50);
+
+INSERT INTO product (name, price, quantity)
+VALUES ('Palm Oil', 460.00, 10);
+Key Points:
+
+You don't need to insert product_id (it's AUTO_INCREMENT)
+Column order doesn't have to match table creation order
+You don't need to include all columns
+Use single quotes (') for text/string values
+
+
+3. SELECT (Read/View Data)
+View All Data:
+sqlSELECT * FROM product;
+* means "all columns"
+View Specific Columns:
+sqlSELECT name, price FROM product;
+View Data with Condition (WHERE clause):
+sqlSELECT * FROM product WHERE quantity > 10;
+Key Points:
+
+SELECT * shows all columns
+SELECT column1, column2 shows only specific columns
+WHERE filters rows based on conditions
+Operators: > (greater than), < (less than), = (equals), >=, <=, !=
+
+
+4. UPDATE (Modify Existing Data)
+Syntax:
+sqlUPDATE table_name
+SET column1 = value1, column2 = value2
+WHERE condition;
+Example:
+sqlUPDATE product
+SET price = 145.00
+WHERE name = 'Coconut Oil';
+IMPORTANT WARNING:
+
+Always use WHERE clause!
+Without WHERE, ALL rows will be updated!
+
+Update Multiple Columns:
+sqlUPDATE product
+SET price = 145.00, quantity = 25
+WHERE name = 'Coconut Oil';
+
+5. DELETE (Remove Data)
+Syntax:
+sqlDELETE FROM table_name
+WHERE condition;
+Example:
+sqlDELETE FROM product
+WHERE name = 'Palm Oil';
+IMPORTANT WARNING:
+
+Always use WHERE clause!
+Without WHERE, ALL data will be deleted (table becomes empty)!
+
+
+Exit MySQL
+sqlEXIT;
+or just type exit and press Enter
