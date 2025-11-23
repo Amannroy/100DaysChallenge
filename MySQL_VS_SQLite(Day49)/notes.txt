@@ -1,0 +1,91 @@
+MySQL vs SQLite:
+Main Difference
+MySQL = Has a separate server running all the time (like a restaurant with waiters)
+SQLite = Just a single file, no server needed (like your personal lunchbox)
+
+Architecture
+MySQL:
+
+Runs as a separate process called MySQL Server
+Your app talks to the server, server manages the database
+Needs network connection (TCP/IP)
+App → MySQL Server → Database
+
+SQLite:
+
+Just one database file
+Your app directly reads/writes to the file
+No separate process running
+App → Database File (direct access)
+
+
+Setup & Installation
+MySQL:
+
+Needs proper installation
+Requires configuration
+More complex setup
+
+SQLite:
+
+Zero configuration
+Just need the database file
+Super simple, ready to use
+
+
+Multiple Users (Concurrency)
+MySQL:
+
+Many users can read and write at the same time
+Handles this safely with locking systems
+Perfect for busy applications
+
+SQLite:
+
+Many users can READ together
+Only ONE user can WRITE at a time
+Others must wait or fail
+
+
+When to Use What
+Use MySQL when:
+
+Building websites with many users
+Expect high traffic
+Need multiple people writing data simultaneously
+Building large applications (e-commerce, social media, banking)
+Database will grow big
+
+Use SQLite when:
+
+Building mobile apps
+Making desktop software
+Single user or low traffic
+Limited resources (IoT devices)
+Need something simple and lightweight
+Testing/prototyping
+
+
+Scalability
+MySQL:
+
+Can handle millions of users
+Supports huge databases
+Built for growth
+
+SQLite:
+
+Good for small scale only
+Limited by file system
+Not for high traffic
+
+
+Simple Rule
+Think of MySQL as a public bus - built for many passengers, runs on schedule, needs maintenance
+Think of SQLite as a bicycle - personal, simple, lightweight, no maintenance
+Neither is "better" - use the right tool for the job!
+
+Key Takeaway
+MySQL = Server-based, powerful, for big multi-user apps
+SQLite = File-based, simple, for small single-user apps
+Choose based on your needs, not which is "better"!
