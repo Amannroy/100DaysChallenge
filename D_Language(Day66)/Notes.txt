@@ -1,0 +1,105 @@
+
+Background & Creation
+Creator: Walter Bright
+
+American computer scientist
+Founded Digital Mars company
+Expertise in compiler design and creation
+Published journals on compiler-related topics
+Previously created C/C++ compilers and games
+
+Development Timeline:
+
+Started development in 1999
+First release (Version 1) in 2001
+Version 1 continued until 2007 (known as D1)
+D2 was later introduced and became the standard
+Now referred to as D, D Lang, or D2
+
+Design Philosophy
+Initial Goal: Re-engineer C++
+
+Later evolved into a distinct language
+Drew inspiration from multiple languages: Java, Python, Ruby, C#
+Aimed for better performance than C++
+Emphasized safety and productivity
+
+Key Technical Features
+Language Classification:
+
+General-purpose system-level programming language
+Statically typed (like C)
+Compiled language (converts source code directly to machine code)
+Multi-paradigm supporting:
+
+Object-oriented programming
+Imperative programming
+Procedural programming
+Functional programming
+
+
+
+Memory Management:
+
+Manual memory management (like C++)
+Garbage collection option available
+
+Syntax & Structure:
+
+C-like syntax
+Module system (eliminates need for header files)
+Modules can be compiled separately
+Libraries can be linked at runtime
+Generates executables
+
+Interoperability:
+
+Can collaborate with C++ code
+Modern programming constructs included
+
+Why D Language Didn't Become Popular
+Major Reasons:
+
+Lack of Corporate Backing
+
+No major company support
+Maintained by D Software Foundation (non-profit)
+Limited resources compared to corporate-backed languages
+
+
+Small Community
+
+Not in TIOBE Index Top 20
+Community support insufficient
+Much smaller than popular language communities
+
+
+Limited Commercial Adoption
+
+Not prominent in large commercial applications
+Fewer real-world use cases
+
+
+No Killer Feature
+
+Despite many features, no unique standout feature
+No compelling reason for developers to switch
+
+
+Ecosystem Limitations
+
+Libraries not as rich/comprehensive
+Limited tooling support
+Smaller third-party ecosystem
+
+
+
+Key Takeaway
+Despite being technically sound with better performance and safety goals than C++, D couldn't achieve popularity due to non-technical factors: corporate support, community size, and ecosystem development. Multiple compilers exist and the community is active, but these weren't enough to compete with established languages.
+Broader Industry Context
+
+Over 1,000 programming languages exist
+Only ~10 languages dominate the market
+Occasionally a "hero language" emerges (like Python, Java in their time)
+Modern competition makes it harder for new languages to gain traction
+Technical merit alone doesn't guarantee success
