@@ -1,0 +1,78 @@
+Static Linking vs Dynamic Linking: C++ vs Python
+
+What is Linking?
+Linking is the process of combining your source code with library code so the program can execute.
+Think of it like this: When you use printf() in C, cout in C++, or print() in Python, you're calling pre-written functions. The actual code for these functions exists somewhere in a file. Your program just calls them, but for execution, the actual code needs to be available. Linking makes this connection.
+Two Types of Linking
+1. Static Linking (C++ only)
+The Process:
+
+You write source code (.cpp file)
+Preprocessor handles directives (lines starting with #)
+Compiler converts source code → machine code (intermediate file)
+Linker copies library code directly into your executable
+Final executable (.exe) contains EVERYTHING - your code + library code
+
+Advantages:
+
+✅ Faster execution - no time wasted searching for library code at runtime
+✅ Self-sufficient - no external dependencies needed
+✅ No missing file errors
+
+Disadvantages:
+
+❌ Larger file size - all code is embedded
+❌ No automatic updates - if library updates, you must recompile
+❌ Memory inefficient - uses more memory
+
+2. Dynamic Linking (Both C++ and Python)
+In C++:
+
+Source code → Compiler → Machine code
+Library code stays in separate files (.dll on Windows, .so on Linux/Mac)
+Executable contains only references to library code, not the actual code
+At runtime, the program loads library code from .dll/.so files
+
+Advantages:
+
+✅ Smaller executable size
+✅ Easy updates - update library files separately without recompiling
+✅ Memory efficient - multiple programs can share same library in memory
+✅ Faster compilation
+
+Disadvantages:
+
+❌ Slower startup - needs symbol resolution at start
+❌ Dependency issues - if .dll/.so file missing, program won't run (you've probably seen "DLL file is missing" errors!)
+❌ External dependencies required
+
+Python's Unique Approach
+Key Point: Python does NOT have static linking - only dynamic linking!
+How Python Works:
+
+You write .py file
+Python compiler creates bytecode (.pyc file)
+
+This is NOT machine code
+This is NOT OS-understandable code
+It's an intermediate format
+
+
+Python Virtual Machine (PVM) runs the bytecode
+
+PVM handles everything at runtime: loading dependencies, memory management, garbage collection
+Interpreter inside PVM converts bytecode → OS-understandable code
+
+
+Libraries are loaded dynamically at runtime by PVM
+
+Important: When you type python script.py or python3 script.py, you're running an executable file built in C/C++ using dynamic linking! This executable depends on files like libpython.so or libpython.dll.
+Why Python is Platform Independent:
+The bytecode format allows the same .pyc file to run on different operating systems - you just need the appropriate PVM installed for that OS.
+
+
+C++ supports both static and dynamic linking
+Python supports ONLY dynamic linking
+Static linking = All-in-one package (faster but bigger)
+Dynamic linking = Separate components (smaller but needs external files)
+Understanding multiple languages helps you appreciate these architectural differences!
