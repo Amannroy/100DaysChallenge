@@ -1,0 +1,51 @@
+What's the Problem?
+Imagine you have 100 students who took an exam. You have 100 different marks. Now, if someone asks "How did the class perform?", you can't just say "good" - that's too vague. You need a single number to represent the entire group's performance.
+What is Central Tendency?
+Central Tendency = Finding ONE representative value for a whole dataset
+Think of it like finding the "center" or "average" of your data.
+Real-Life Analogy
+Example 1: Balancing a Pen
+
+A regular pen balances exactly at its middle point
+That middle point represents the "center"
+
+Example 2: Baseball Bat
+
+A baseball bat is heavier on one end
+To balance it, you can't hold it at the exact middle
+You need to hold it closer to the heavier side
+This shows there are different ways to find the "center" depending on your purpose
+
+Three Main Methods
+1. Mean (Average)
+
+Add all values and divide by how many there are
+Three types: Arithmetic, Geometric, Harmonic
+
+2. Median (Middle Value)
+
+Arrange data in order, pick the middle value
+
+3. Mode (Most Frequent)
+
+The value that appears most often in your data
+
+Important Relationships
+When all three are EQUAL (Mean = Median = Mode):
+
+Your data is symmetrical (balanced on both sides)
+Like a perfect bell curve
+
+When Mean > Median > Mode:
+
+Positively skewed data (tail stretches to the right)
+
+When Mean < Median < Mode:
+
+Negatively skewed data (tail stretches to the left)
+
+Bonus Formula
+If you know any TWO of these values, you can find the third:
+Mode = 3 × Median - 2 × Mean
+
+Bottom Line: Instead of dealing with hundreds of different numbers, we use these measures to get ONE number that represents the entire dataset - making it easy to compare and understand data!
