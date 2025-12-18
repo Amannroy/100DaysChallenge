@@ -1,0 +1,78 @@
+Topic: Arithmetic Mean (Average)
+Types of Mean
+There are three types of mean:
+
+Arithmetic Mean (most commonly used)
+Geometric Mean
+Harmonic Mean
+
+When we just say "mean," we usually refer to arithmetic mean.
+
+Arithmetic Mean for Ungrouped Data
+Formula:
+Mean (x̄) = Sum of all observations / Number of observations
+Mean (x̄) = (x₁ + x₂ + x₃ + ... + xₙ) / n
+Example:
+Data: 54, 29, 31, 46, 40
+Mean = (54 + 29 + 31 + 46 + 40) / 5 = 200 / 5 = 40
+
+Important Property: Deviation from Mean
+Deviation = Each observation - Mean
+For the above example (Mean = 40):
+
+54 - 40 = +14
+29 - 40 = -11
+31 - 40 = -9
+46 - 40 = +6
+40 - 40 = 0
+
+Key Property: The sum of all deviations from the mean always equals zero.
+(+14) + (-11) + (-9) + (+6) + 0 = 0
+This is a fundamental property to verify your calculations!
+
+Arithmetic Mean for Grouped Data
+Grouped data = Data organized by frequency (how many times each value appears)
+Formula:
+Mean (x̄) = Σ(xᵢ × fᵢ) / Σfᵢ
+Where:
+
+xᵢ = each unique value
+fᵢ = frequency (how many times that value appears)
+
+Example:
+Value (xᵢ)Frequency (fᵢ)xᵢ × fᵢ1077015812045209109061060
+Mean = (70 + 120 + 20 + 90 + 60) / (7 + 8 + 5 + 10 + 10)
+Mean = 360 / 40 = 9
+
+Special Properties of Arithmetic Mean
+If you perform the same operation on all observations, apply the same operation to the mean:
+
+Addition: Add 2 to all values → Add 2 to the mean
+
+New mean = 40 + 2 = 42
+
+
+Subtraction: Subtract 3 from all values → Subtract 3 from the mean
+
+New mean = 40 - 3 = 37
+
+
+Multiplication: Multiply all values by 2 → Multiply mean by 2
+
+New mean = 40 × 2 = 80
+
+
+Division: Divide all values by 5 → Divide mean by 5
+
+New mean = 40 ÷ 5 = 8
+
+
+
+
+Summary
+
+Arithmetic Mean = Average of all values
+For ungrouped data: Add all values and divide by count
+For grouped data: Use frequency-weighted average
+Deviations always sum to zero (important verification tool)
+Operations on all data values affect the mean the same way
