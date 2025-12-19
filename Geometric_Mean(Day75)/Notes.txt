@@ -1,0 +1,71 @@
+Three Types of Mean
+There are three types of mean:
+
+Arithmetic Mean 
+Geometric Mean 
+Harmonic Mean 
+
+What is Geometric Mean?
+Simple Formula: Multiply all values together, then take the nth root (where n = number of observations)
+Example with 5 numbers:
+Numbers: 4, 16, 128, 512, 1024
+Calculation:
+
+Multiply all: 4 × 16 × 128 × 512 × 1024
+Take the 5th root (or raise to power 1/5)
+
+Easier method using powers of 2:
+
+4 = 2², 16 = 2⁴, 128 = 2⁷, 512 = 2⁹, 1024 = 2¹⁰
+Add exponents: 2 + 4 + 7 + 9 + 10 = 32
+So: 2³² raised to power 1/5 = 2^(32/5) = 2^6.4
+Answer ≈ 84.44
+
+Important Rule
+Geometric mean only works with positive numbers (negative numbers would create complex numbers when taking roots)
+When to Use Geometric Mean vs Arithmetic Mean?
+Real-World Example: Stock Market Investment
+Scenario:
+
+You invest ₹100
+Year 1: +50% profit → You now have ₹150
+Year 2: -50% loss → You now have ₹75
+
+Final result: You lost ₹25 (25% loss overall)
+Why Arithmetic Mean Fails Here:
+If you calculate: (+50% + (-50%)) ÷ 2 = 0%
+This suggests no change, but you actually lost money! The arithmetic mean overestimates and gives a misleading result.
+How Geometric Mean Solves This:
+Step 1: Convert percentages to decimal multipliers
+
+Year 1: 1.5 (represents 50% gain)
+Year 2: 0.5 (represents 50% loss)
+
+Step 2: Apply geometric mean formula
+
+√(1.5 × 0.5) = √0.75 ≈ 0.866
+
+Step 3: Subtract 1 to get the rate
+
+0.866 - 1 = -0.134 or -13.4% per year
+
+Verification:
+
+Start: ₹100
+After Year 1 (13.4% loss): ₹86.6
+After Year 2 (13.4% loss on ₹86.6): ≈ ₹75 ✓
+
+This accurately shows you're losing about 13.4% per year on average, which makes sense!
+Key Takeaway
+Use Geometric Mean when:
+
+Dealing with rates of change, growth rates, or percentages
+Values are multiplied together (compound interest, investment returns)
+You need accurate average rates over time
+
+Use Arithmetic Mean when:
+
+Adding values together
+Finding simple averages of independent observations
+
+Geometric mean always gives a value smaller than or equal to arithmetic mean, and it's more accurate for multiplicative processes like investment returns!
