@@ -1,0 +1,62 @@
+Harmonic Mean
+
+Formula
+For values x₁, x₂, x₃, ... xₙ:
+Harmonic Mean = n / (1/x₁ + 1/x₂ + ... + 1/xₙ)
+
+Take reciprocals (1/value) of all numbers
+Add them up
+Divide total count by this sum
+
+
+Key Rule
+For the same data:
+Harmonic Mean < Geometric Mean < Arithmetic Mean
+(Harmonic mean is always the smallest)
+
+When to Use Harmonic Mean?
+Use it when dealing with rates and ratios (speed, efficiency, etc.)
+Classic Example: Average Speed Problem
+Question: You travel from point A to B at 40 km/hr, and return from B to A at 60 km/hr. What's your average speed?
+Wrong Answer: (40 + 60) / 2 = 50 km/hr ❌
+Right Answer: Use Harmonic Mean = 48 km/hr ✓
+
+Why Arithmetic Mean is Wrong Here
+Let's say distance A to B = 120 km
+
+Going (A→B): 40 km/hr → takes 3 hours
+Returning (B→A): 60 km/hr → takes 2 hours
+
+Total distance: 240 km
+Total time: 5 hours
+Average speed: 240/5 = 48 km/hr
+The Key Insight:
+
+Distance is same both ways, but time is different (3 hrs vs 2 hrs)
+You spent MORE time at the slower speed
+So average is closer to 40 than to 60
+
+Use Arithmetic Mean only when TIME is equal in all parts
+
+When NOT to Use Harmonic Mean
+
+When any value is zero (can't divide by zero)
+When time periods are equal (use arithmetic mean instead)
+When not dealing with rates/ratios
+
+
+For Grouped Data (with frequencies)
+If values have frequencies (f₁, f₂, etc.):
+Harmonic Mean = Σf / (f₁/x₁ + f₂/x₂ + ...)
+
+Real Application in Data Science
+F1 Score in Machine Learning uses Harmonic Mean!
+
+Used in classification models with imbalanced data
+Combines Precision and Recall using harmonic mean (not arithmetic)
+
+
+Quick Summary
+✅ Use Harmonic Mean for: Rates, speeds, ratios (when denominators matter)
+❌ Don't use when: Values are zero, or time/quantities are equal
+🔑 Remember: It's always the lowest of the three means
