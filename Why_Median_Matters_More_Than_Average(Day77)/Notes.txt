@@ -1,0 +1,98 @@
+ Median (Measure of Central Tendency)
+What is Central Tendency?
+When we have a large dataset and want to represent it with a single value, we find the average or "measure of central tendency."
+Different types:
+
+Arithmetic Mean
+Geometric Mean
+Harmonic Mean
+Median
+Mode
+
+
+What is Median?
+Median = The middle value of a sorted dataset
+
+Also called the 50th percentile
+A robust average heavily used in AI/Data Science for data cleaning
+
+
+How to Calculate Median
+Step 1: Always SORT the data first (ascending order)
+❌ Without sorting = Wrong answer
+Step 2: Check if total values are ODD or EVEN
+When ODD number of values:
+
+Formula: (n + 1) / 2 position
+Example: 19 values → (19+1)/2 = 10th position
+The 10th term is the median (not the value 10, but whatever is at 10th position)
+
+When EVEN number of values:
+
+Find two middle terms: n/2 and (n/2 + 1) positions
+Example: 10 values → 5th and 6th terms
+Median = Average of these two values (add them and divide by 2)
+Note: This median might not actually exist in the dataset!
+
+
+Worked Examples
+Example 1: Even number of values
+Data: 23, 65, 18, 12, 40, 15, 21, 18
+Step 1 - Sort: 12, 15, 18, 18, 21, 23, 40, 65
+Step 2 - Find middle:
+
+Total = 8 values (even)
+Middle terms = 4th and 5th positions
+4th term = 18, 5th term = 21
+Median = (18 + 21) / 2 = 19.5
+
+Example 2: Odd number of values
+Data: 42, 25, 20, 72, 4, 51, 6, 18, 31
+Step 1 - Sort: 4, 6, 18, 20, 25, 31, 42, 51, 72
+Step 2 - Find middle:
+
+Total = 9 values (odd)
+Middle position = (9+1)/2 = 5th position
+5th term = 25
+Median = 25
+
+
+When to Use Median vs Mean?
+Use MEAN when:
+✅ Data has few or no outliers
+✅ Values are clustered together
+✅ Normal distribution
+Use MEDIAN when:
+✅ Data has outliers (extreme values)
+✅ Skewed distribution (left or right)
+✅ Garbage/false data points present
+
+Why Median is Better with Outliers
+Example with bad data:
+Data: 10, 12, 11, 13, 1000
+
+Mean = 209.2 ❌ (completely unrealistic!)
+Median = 12 ✅ (represents actual data well)
+
+Real-world example:
+Temperature sensor readings: 10, 11, 12, 13, 1000 (sensor error)
+
+Mean = 209.2°C (impossible temperature!)
+Median = 12°C (realistic temperature)
+
+Key insight:
+
+Mean is highly sensitive to extreme values
+Median is highly resistant to outliers
+One garbage data point can shift mean significantly, but median stays stable
+
+
+Important for AI/Data Science
+✅ Median is heavily used in data cleaning
+✅ Common interview question topic
+✅ Helps identify if data is symmetric or skewed
+✅ Critical for handling real-world messy data
+Rule of thumb:
+
+Normal distribution → Use Mean
+Skewed distribution → Use Median
