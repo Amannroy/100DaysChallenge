@@ -1,0 +1,89 @@
+Mode 
+What is Mode?
+Simple Definition: Mode is the element that appears most frequently in a dataset - the one with the highest count.
+
+Key Features of Mode
+1. Works with Non-Numerical Data
+
+Mode is the ONLY measure of central tendency that can be applied to non-numerical values
+Why? Because we only need to count frequency, not perform mathematical operations
+Examples: city names, colors, device types, categories
+
+This is why Mode is called the "King of Categories"
+
+How to Calculate Mode
+Simple Steps:
+
+Identify all unique elements in your dataset
+Count the frequency of each element
+The element with the highest frequency = Mode
+
+Example Problem:
+Dataset: 21, 8, 21, 17, 16, 21, 42, 8, 50, 21
+Step 1 - Find unique elements:
+
+21, 8, 17, 16, 42, 50
+
+Step 2 - Count frequencies:
+
+21 → appears 4 times
+8 → appears 2 times
+17 → appears 1 time
+16 → appears 1 time
+42 → appears 1 time
+50 → appears 1 time
+
+Answer: Mode = 21 (highest frequency)
+
+Types of Mode
+
+Unimodal - One clear mode (like the example above)
+Bimodal - Two values with equally highest frequency
+Multimodal - Three or more values with equally highest frequency
+
+
+Real-World Applications in AI/Data Science
+1. Categorical Data Analysis
+Example: User device information
+
+Dataset: iOS, Android, iOS, Windows, Android, iOS, Android, Android, Android, iOS, Windows, Android, Android
+
+Counting:
+
+iOS = 4 times
+Android = 7 times
+Windows = 2 times
+
+Mode = Android (most common device)
+Note: You cannot use arithmetic mean here because these are categories, not numbers!
+
+2. Handling Missing Data
+When cleaning data for machine learning:
+
+If a categorical feature (like city, color, device type) has missing values
+Standard practice: Replace missing values with the Mode
+Why? Mode represents the value most likely to occur
+
+
+3. Natural Language Processing (NLP)
+Used in:
+
+Greedy Decoding - choosing most frequent outputs
+Topic Modeling - identifying dominant themes
+Classification tasks - categorizing text data
+
+
+Why Mode Matters for AI
+
+Many AI tasks involve categorical data where mean/median don't work
+Essential for data preprocessing and cleaning
+Critical for understanding fundamental statistics in AI
+Works where other averages fail!
+
+
+Key Takeaway
+Mode = Most Common Value
+
+Count frequencies
+Pick the highest
+Works with ANY type of data (numbers, text, categories)
