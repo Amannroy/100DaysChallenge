@@ -1,0 +1,61 @@
+Measures of Dispersion 
+What We Already Learned
+
+Measures of Central Tendency give us ONE single value to represent entire data
+Examples: Mean, Median, Mode
+Like: Average height of students, per capita income of a country
+
+The Problem with Averages
+Example: India's Per Capita Income
+
+Average income: ₹2 lakhs per year
+Sounds okay, right? But wait...
+Some people earn WAY more (rich people earn ₹2 lakhs per DAY!)
+Some people earn WAY less (less than ₹50,000 per year)
+
+The Issue: Average alone doesn't show the full picture! We're missing something important.
+What is Dispersion?
+Dispersion = Spread of Data
+It tells us:
+
+How scattered is the data?
+How clustered is the data?
+Are values close together or far apart?
+
+Why Dispersion Matters
+Low Dispersion (Good News!)
+
+Data is clustered together
+Average truly represents the whole dataset
+Everyone earns close to ₹2 lakhs → no major inequality
+
+High Dispersion (Red Flag!)
+
+Data is scattered all over
+Average is misleading!
+Huge gap between rich and poor → government needs to make policies
+
+Key Concept (Very Important!)
+Dispersion is ALWAYS calculated with respect to an average (center value)
+
+You first pick your center: Mean, Median, or Mode
+Then measure how far each value is from that center
+More distance = More dispersion
+
+
+4 Measures of Dispersion
+
+Range - Simplest method
+Quartile Deviation (Inter-Quartile Range)
+Standard Deviation ⭐
+Variance ⭐
+
+Note: Standard Deviation and Variance are the MOST IMPORTANT and most effective
+Why This Matters for Data Science & AI
+
+Data Science and AI work with HUGE amounts of data
+Understanding both center (average) and spread (dispersion) is essential
+You need stats to play with data effectively!
+
+
+Bottom Line: Don't just ask "What's the average?" Also ask "How spread out is the data?" Both together give you the complete picture! 📊
