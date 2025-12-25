@@ -1,0 +1,45 @@
+Understanding Range in Statistics 📊
+What is Dispersion?
+Central Tendency vs Dispersion:
+
+Central Tendency (Mean, Median, Mode) = Gives us ONE number to represent entire dataset
+
+Example: "Average class marks = 75"
+
+
+Dispersion = Tells us HOW SPREAD OUT the data is
+
+Are all students scoring near 75? Or are scores all over the place?
+
+
+
+Range - The Simplest Measure
+Formula:
+Range = Maximum Value - Minimum Value
+Example Given:
+
+Dataset: 17, 23, 45, 52, 67, 81
+Smallest value (Xmin) = 17
+Largest value (Xmax) = 81
+Range = 81 - 17 = 64
+
+This means data is spread across 64 units.
+The BIG Problem with Range ⚠️
+Range only looks at the two extreme values (highest and lowest). It ignores everything in between!
+Why this is bad:
+
+Imagine: 17, 18, 19, 20, 21, 22, 81
+Most data is clustered between 17-22
+But ONE outlier (81) makes it seem like data is super spread out
+Range = 64 (misleading!)
+
+Real situation: 99% of data is tightly grouped, but range doesn't show this.
+Better Alternatives (Coming in Future Lessons)
+
+Percentile
+Quartile Deviation
+Standard Deviation ⭐ (Most important!)
+Variance
+
+Key Takeaway
+Range is simple but not useful for real analysis because it can be misleading when outliers exist.
