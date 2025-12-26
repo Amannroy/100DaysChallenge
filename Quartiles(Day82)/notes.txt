@@ -1,0 +1,73 @@
+Quartiles in Statistics 
+What are Quartiles?
+Quartiles are values that divide a sorted dataset into four equal parts. They are special types of quantiles used to understand data distribution and spread.
+The Five Quartile Points
+When we divide data into four equal parts, we get 5 boundary points:
+
+Q0 = Minimum value (0% of data)
+Q1 = First Quartile (25% of data below it)
+Q2 = Second Quartile/Median (50% of data below it)
+Q3 = Third Quartile (75% of data below it)
+Q4 = Maximum value (100% of data)
+
+Note: We typically only calculate Q1, Q2, and Q3 since Q0 and Q4 are just the extreme values.
+Why Use Quartiles?
+Unlike range (which only considers extreme values), quartiles help us understand:
+
+How data is spread throughout the distribution
+The detailed structure of data dispersion
+Patterns in different sections of the dataset
+
+This makes quartiles a much better measure of dispersion than simple range.
+How to Calculate Quartiles
+Step-by-Step Method
+Example Dataset: 1, 3, 5, 7, 9, 10, 12, 15, 18, 20, 25 (already sorted)
+Step 1: Find the total number of elements
+
+n = 11 elements
+
+Step 2: Calculate Q2 (Median)
+
+Formula for odd n: Position = (n + 1) / 2
+Position = (11 + 1) / 2 = 12 / 2 = 6th term
+Q2 = 10 (the 6th value)
+
+Step 3: Calculate Q1 (First Quartile)
+
+Look at values to the LEFT of median (exclude median itself)
+Left half: 1, 3, 5, 7, 9 (5 values)
+New n = 5
+Position = (5 + 1) / 2 = 6 / 2 = 3rd term
+Q1 = 5
+
+Step 4: Calculate Q3 (Third Quartile)
+
+Look at values to the RIGHT of median (exclude median itself)
+Right half: 12, 15, 18, 20, 25 (5 values)
+New n = 5
+Position = (5 + 1) / 2 = 3rd term
+Q3 = 18
+
+Final Results
+For the example dataset:
+
+Q1 = 5 (25th percentile)
+Q2 = 10 (50th percentile/median)
+Q3 = 18 (75th percentile)
+
+Key Takeaways
+
+Always sort your data first before calculating quartiles
+Q2 is the same as the median - it's the middle value of the entire dataset
+Q1 is the median of the lower half (excluding the overall median)
+Q3 is the median of the upper half (excluding the overall median)
+Use the formula (n + 1) / 2 to find the position when n is odd
+Quartiles give a much more detailed view of data spread compared to just range
+
+Practical Understanding
+Think of quartiles as dividing your class scores into four groups:
+
+Bottom 25% (below Q1)
+Lower-middle 25% (Q1 to Q2)
+Upper-middle 25% (Q2 to Q3)
+Top 25% (above Q3)
