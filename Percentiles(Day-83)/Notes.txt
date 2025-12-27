@@ -1,0 +1,50 @@
+Percentiles 
+What is a Percentile?
+Percentile = Values that divide a dataset into 100 equal parts
+
+Similar to quartiles (which divide into 4 parts), but percentiles divide into 100 parts
+Range: P₀ to P₁₀₀
+
+Understanding Percentile Values
+
+P₁ = 1% of data is below this value
+P₅₀ = 50% of data is below this value (this is the median or Q₂)
+P₁₀₀ = highest value
+
+Connection to Quartiles
+
+Q₁ = P₂₅ (25% of data below)
+Q₂ = P₅₀ (median)
+Q₃ = P₇₅ (75% of data below)
+
+Formula to Calculate Percentile
+Position of Pᵢ = (i/100) × (n + 1)
+Where:
+
+i = percentile number (like 10 for P₁₀)
+n = total number of values
+
+Step-by-Step Example: Finding P₁₀
+Given data: 10 values (unsorted)
+Step 1: Find the position
+
+P₁₀ = (10/100) × (10 + 1)
+P₁₀ = 0.1 × 11 = 1.1
+This means P₁₀ is between 1st and 2nd position
+
+Step 2: Sort the data first!
+⚠️ IMPORTANT: Always arrange data in ascending order before finding the actual value
+Step 3: Calculate the actual value
+
+Position 1.1 means: between 1st value (17) and 2nd value (20)
+Gap between them = 20 - 17 = 3
+Take 10% of this gap = 3 × 0.1 = 0.3
+Add to first value: 17 + 0.3 = 17.3
+
+Answer: P₁₀ = 17.3
+Key Points to Remember
+
+Always sort data first before calculating percentile values
+The formula gives you the position, not the value
+If position is decimal (like 1.1), interpolate between the two nearest values
+Percentiles help understand data distribution better than just percentages
