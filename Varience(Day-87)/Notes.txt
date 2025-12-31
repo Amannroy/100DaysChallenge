@@ -1,0 +1,48 @@
+What is Dispersion?
+Dispersion measures how spread out data is around a central value, typically the mean. The mean is considered the center of the dataset, and dispersion tells us how much the other data points deviate from this center.
+
+What is Variance?
+Variance is a measure of dispersion that indicates how spread out data points are from the mean. The purpose is the same as other dispersion measures like range, quartile deviation, and standard deviation.
+Lower variance means data is clustered closer to the mean. Higher variance means data is more spread out from the mean.
+Variance is written as VAR or σ² (sigma squared). Sigma represents standard deviation, so sigma squared represents variance.
+
+Formula for Variance
+Variance is calculated using the same formula as standard deviation, but squared. This means we don't take the square root at the end.
+The formula is: Variance (σ²) = Sum of (x - x̄)² divided by (n - 1)
+Where x is individual data values, x̄ is the arithmetic mean, and n is the number of data points.
+The key difference from standard deviation is that no square root is applied.
+
+Step-by-Step Calculation Example
+Let's say we have a dataset and we want to calculate variance:
+Step 1: Calculate the mean (x̄). In the example, the mean came out to be 8.
+Step 2: Find deviations by subtracting the mean from each value (x - x̄). This shows how far each point is from the center.
+Step 3: Square all the deviations (x - x̄)². This eliminates negative values.
+Step 4: Sum all the squared deviations. In the example, this sum was 146.
+Step 5: Divide by (n-1). So 146 divided by 7.
+Step 6: For standard deviation, we would take the square root which gives approximately 4.5. For variance, we keep it squared, so we square 4.5 which gives approximately 21.
+Result: Variance = 21
+
+Coefficient of Variance
+The coefficient of variance is used to compare dispersion between different datasets on a standardized scale.
+Formula: Coefficient of Variance = (Standard Deviation divided by Mean) multiplied by 100
+Why do we need this? Because variance gives an absolute value which can't be compared across different datasets. The coefficient of variance provides a relative measure as a percentage, allowing meaningful comparison between datasets with different scales or units.
+Note: The coefficient of standard deviation is just Standard Deviation divided by Mean. When we multiply this by 100, it becomes the coefficient of variance.
+
+Variance vs Standard Deviation
+Both measures have the same purpose - they measure dispersion or spread of data. Both use essentially the same formula. The main difference is in their units.
+Standard Deviation has the same units as the original data. For example, if your data is distances measured in meters (1 meter, 2 meters, 3 meters, 4 meters, 5 meters), then standard deviation will also be in meters. This makes it easier to visualize and interpret.
+Using the example of distances: 1, 2, 3, 4, 5 meters:
+
+Mean = 3 meters
+Deviations: -2, -1, 0, 1, 2
+Squared deviations: 4, 1, 0, 1, 4
+Sum of squared deviations = 10
+Standard Deviation = square root of (10/4) meters
+
+Variance has squared units of the original data. So if data is in meters, variance is in meters squared (like area). This makes it harder to visualize. Using the same example, variance would be 10/4 = 5/2 meters squared.
+
+Why Both Measures Exist?
+Standard Deviation is better for interpretation and visualization because it has the same units as the original data. When we talk about deviation, we can understand it in the original units (like meters for distance).
+Variance is important for mathematical calculations and is used in many statistical formulas. It's the foundation for other statistical concepts.
+Both are equally valid measures of dispersion. Standard deviation is just easier to visualize because it's in the same units as the data, while variance is in squared units which is harder to imagine (like area instead of length).
+The choice between using variance or standard deviation depends on the context and what you're trying to communicate. Both measure the same thing - how spread out your data is from the mean.
