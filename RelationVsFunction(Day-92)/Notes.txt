@@ -1,0 +1,69 @@
+Relations and Functions 
+What is a Relation?
+Definition: A relation is a mapping between elements of two sets where any type of connection is allowed.
+Real-World Example:
+
+Set 1: Students (S1, S2, S3...)
+Set 2: Batches (B1, B2, B3...)
+A student can enroll in one or multiple batches
+Multiple students can be in the same batch
+
+Key Feature: All types of mappings are allowed:
+
+One-to-one (1 student → 1 batch)
+One-to-many (1 student → multiple batches)
+Many-to-one (multiple students → 1 batch)
+
+
+What is a Function?
+Definition: A function is a special case of relation where each input has exactly one output.
+Key Difference from Relation:
+
+❌ One-to-many is NOT allowed in functions
+✅ Each element from Set X maps to only one element in Set Y
+
+Example:
+
+Set X: All integers {..., -2, -1, 0, 1, 2, 3...}
+Set Y: Non-negative integers {0, 1, 2, 3, 4...}
+Rule: y = x² (square of x)
+
+Mappings:
+
+2 → 4 ✅
+-2 → 4 ✅ (multiple inputs can give same output - this is allowed)
+0 → 0 ✅
+BUT: 2 cannot map to both 4 AND 5 ❌
+
+
+Important Terms
+1. Domain
+
+All possible input values (Set X)
+In example: All integers
+
+2. Co-domain
+
+All values in output set (Set Y)
+In example: All non-negative integers {0, 1, 2, 3, 4, 5...}
+
+3. Range
+
+Only those output values that actually participate in the mapping
+In example: {0, 1, 4, 9, 16, 25...} (perfect squares only)
+Note: 2, 3, 5, 6, 7, 8 are in co-domain but NOT in range (no integer squares to these)
+
+
+AI Context
+Why This Matters for AI:
+
+Neurons in Neural Networks = Functions
+Each neuron takes inputs and produces exactly one output
+Domain → Feature Space (input features)
+Range → Prediction Space (possible outputs/predictions)
+
+Core Concept: Just like our brain has neurons that process information, artificial neural networks use mathematical functions (artificial neurons) to learn and make decisions. Understanding functions is fundamental to understanding how AI works.
+
+
+
+
