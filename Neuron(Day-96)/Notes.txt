@@ -1,0 +1,126 @@
+Neural Networks & Neurons
+What is a Neuron?
+Simple Definition: A neuron is a simple decision-making unit that receives inputs, processes them, and produces an output.
+Technical Definition: A neuron in AI is a mathematical unit that takes inputs, applies weights, adds bias, and passes the result through an activation function to produce an output.
+
+Key Concept: Biological vs Artificial Neurons
+
+Artificial neurons are NOT exact copies of brain neurons
+They are inspired by biological neurons, not replicas
+It's just a piece of code, not actual hardware
+Think of it like a function in programming that takes arguments (inputs)
+
+
+Structure of an Artificial Neuron
+1. Inputs (x₁, x₂, x₃...xₙ)
+
+Multiple inputs can be fed into one neuron
+Example (Email spam detection):
+
+How many "free" words appear?
+Is sender unknown?
+How many links are included?
+
+
+
+2. Weighted Sum Calculation
+
+Formula: z = (w₁×x₁) + (w₂×x₂) + (w₃×x₃) + ... + (wₙ×xₙ) + b
+
+w = weights (importance of each input)
+b = bias
+z = weighted sum result
+
+
+Different inputs have different weights (importance levels)
+
+3. Activation Function
+
+Applied to the weighted sum (z)
+Converts linear model to non-linear
+Popular functions: Sigmoid, ReLU
+Produces the final output
+
+
+How Does a Neuron Work?
+
+Takes multiple inputs
+Multiplies each input by its weight
+Adds all weighted inputs together + bias
+Applies activation function
+Produces output (signal strength as a number)
+
+Output interpretation:
+
+Large number = strong signal
+Zero = no signal (not activated)
+
+
+What is "Learning" in AI?
+Learning means: The neuron figures out the best values for weights (w) and bias (b)
+Training Process:
+
+Feed neuron training data with:
+
+Inputs
+Expected outputs (labeled data)
+
+
+Neuron predicts output using random w and b values
+Compare prediction with actual output
+Adjust w and b values to reduce error
+Repeat with more data until accuracy improves
+
+More training data = Better weight/bias values = Better predictions
+
+Single Neuron vs Neural Network
+Single Neuron
+
+Can solve simple problems
+Acts as a basic AI model
+Limited decision-making capability
+
+Neural Network (Multiple Neurons)
+
+Solves complex problems
+Examples: Face recognition, self-driving cars, speech recognition
+Contains:
+
+Input layer neurons
+Hidden layer neurons
+Output layer neurons
+
+
+
+
+Real-World Example: Email Spam Detection
+Inputs:
+
+Number of "free" words
+Sender unknown? (yes/no)
+Number of links
+Other suspicious patterns
+
+Process:
+
+Each input gets a weight (importance)
+Calculate weighted sum
+Apply activation function
+Output: Spam (1) or Not Spam (0)
+
+Training:
+
+Feed thousands of emails (labeled as spam/not spam)
+Neuron learns optimal weights
+Can then predict new emails
+
+
+Common Misconceptions
+❌ Neurons are just if-else statements → NO, they use mathematical calculations
+❌ More neurons = always better → NO, depends on problem complexity
+❌ Artificial neurons = exact brain neurons → NO, only inspired by them
+
+Key Takeaway
+A neuron is a mathematical function with learning ability. It learns by adjusting weights and bias values through training data to make accurate predictions.
+Formula to remember:
+Output = ActivationFunction[(w₁×x₁ + w₂×x₂ + ... + wₙ×xₙ + b)]
