@@ -1,0 +1,113 @@
+AI Learning Path 
+Main Idea
+AI is not just ChatGPT - it's a huge ecosystem with different branches. You need to specialize in one area.
+The 5 Main Branches of AI:
+1. Machine Learning (ML)
+
+Most established branch of AI
+What it does:
+
+Social media recommendations
+Email spam detection
+Fraud detection
+
+
+Essential skill for anyone entering AI
+What you need to learn:
+
+Math basics: Linear Algebra, Calculus, Statistics, Probability
+Python programming
+Libraries: NumPy, Pandas, Scikit-learn
+Concepts: Supervised learning, Unsupervised learning, Clustering, Regression
+
+
+
+2. Deep Learning & Neural Networks
+
+Subset of Machine Learning
+What it does:
+
+Powers ChatGPT and Gemini
+Image generation
+Medical imaging (detecting tumors in X-rays with high accuracy)
+
+
+What you need to learn:
+
+Architectures: RNN, CNN
+Frameworks: PyTorch, TensorFlow
+Hardware knowledge: GPUs
+
+
+
+3. Natural Language Processing (NLP)
+
+Teaches computers to understand human language
+What it does:
+
+Sentiment analysis (brands analyzing tweets to understand customer interest)
+Targeted advertising based on conversations
+Understanding what products you might want
+
+
+What you need to learn:
+
+Text processing
+Tokenization, Stemming, Lemmatization
+Large Language Models (LLMs)
+Prompt Engineering
+Vector Databases
+Libraries: Hugging Face
+
+
+
+4. Computer Vision
+
+Helps computers understand visual information
+What it does:
+
+Self-driving cars (detecting objects and distances)
+Facial recognition on phones
+Object detection
+
+
+What you need to learn:
+
+Basic image processing
+Advanced: Object detection, Semantic segmentation
+Generative Adversarial Networks (GANs)
+
+
+
+5. Robotics
+
+Intersection of AI and hardware
+What it does:
+
+Surgical robots in medical industry
+Warehouse automation
+Expert systems for specific situations
+
+
+What you need to learn:
+
+PID Controllers
+Reinforcement Learning
+Robot Operating System (ROS)
+C++ programming
+Linux commands
+Basic electronics
+
+
+Good for: Electronics engineering students
+
+Getting Started (If You're Confused):
+Start with these fundamentals that work for all branches:
+
+Python programming
+Fundamental mathematics
+Basics of Neural Networks
+Machine Learning
+Generative AI and LLMs
+
+Bottom line: Learn the basics first, then specialize as you understand what interests you most!
