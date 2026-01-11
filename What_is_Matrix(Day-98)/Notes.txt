@@ -1,0 +1,126 @@
+Matrix Notes
+What is a Matrix?
+A matrix is a collection of numbers or symbols arranged in rows and columns forming a rectangular shape.
+
+Matrix = singular (one matrix)
+Matrices = plural (multiple matrices)
+
+General Format:
+[a₁₁  a₁₂  a₁₃  ...  a₁ₙ]
+[a₂₁  a₂₂  a₂₃  ...  a₂ₙ]
+[a₃₁  a₃₂  a₃₃  ...  a₃ₙ]
+[aₘ₁  aₘ₂  aₘ₃  ...  aₘₙ]
+
+m = number of rows
+n = number of columns
+Order = m × n (always write rows first, then columns)
+
+Element Notation:
+
+aᵢⱼ means element at row i, column j
+Example: a₃₂ = 3rd row, 2nd column
+
+
+Types of Matrices
+Square Matrix: When rows = columns (e.g., 3×3, 4×4)
+Rectangular Matrix: When rows ≠ columns (e.g., 2×3, 3×2)
+
+Real-Life Uses of Matrices
+
+Games: Chess boards, board games (8×8 grid)
+Machine Learning: Neural networks, confusion matrix
+Computer Graphics: Image processing
+Physics, Chemistry, Economics: Various calculations
+Linear Equations: Solving systems of equations
+Timetables: Organizing days and periods
+Finance & Geology: Data representation
+
+
+Matrix Operations
+1. Addition
+
+Both matrices must have the same order
+Add corresponding elements
+
+Example:
+[2  4]   [1   4]   [3   8]
+[5  6] + [3  -2] = [8   4]
+2. Subtraction
+
+Both matrices must have the same order
+Subtract corresponding elements
+
+Example:
+[2  4  1]   [4  0   3]   [-2   4  -2]
+[0  6 -3] - [-2 5  -1] = [ 2   1  -2]
+3. Scalar Multiplication
+
+Multiply every element by the scalar (constant number)
+Order remains the same
+
+Example:
+     [1   4   2]   [5   20  10]
+5 ×  [-2  0   3] = [-10  0  15]
+     [5   6   2]   [25  30  10]
+4. Matrix Multiplication
+IMPORTANT RULE: For A × B to be possible:
+
+Columns of A = Rows of B
+If A is m₁×n₁ and B is m₂×n₂, then n₁ must equal m₂
+Result will be m₁×n₂
+
+Remember: A×B ≠ B×A (order matters!)
+Method:
+
+Multiply row elements of first matrix with column elements of second matrix
+Add the products
+
+Example:
+[2  4]       [1  2   3]
+[3  8]   ×   [4  0  -2]
+[6  1]
+
+Order: (3×2) × (2×3) → Result: 3×3 ✓
+
+Result:
+[18   4   -2]
+[35   6   -7]
+[10  12   16]
+
+Transpose of a Matrix
+What it does: Converts rows into columns and columns into rows
+
+If original is m×n, transpose is n×m
+Notation: Aᵀ or A'
+
+Example:
+Original:        Transpose:
+[1  2  3]        [1  4]
+[4  5  6]        [2  5]
+                 [3  6]
+
+Diagonal Elements
+Principal Diagonal (Main Diagonal)
+
+Goes from top-left to bottom-right
+Only in square matrices
+
+Example:
+[5  3  7]
+[1  8  4]  → Principal diagonal: 5, 8, 2
+[9  6  2]
+Trace of a Matrix
+Trace = Sum of principal diagonal elements
+Using above example: Trace = 5 + 8 + 2 = 15
+
+Quick Summary
+
+Matrix Order = Rows × Columns
+Addition/Subtraction = Same order needed, add/subtract corresponding elements
+Scalar Multiplication = Multiply all elements by the number
+Matrix Multiplication = Columns of 1st = Rows of 2nd
+Transpose = Flip rows and columns
+Trace = Sum of main diagonal elements
+
+
+Pro Tip: Matrices are 2D arrays - very important for coding, AI, and data science!
