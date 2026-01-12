@@ -1,0 +1,108 @@
+Types of Matrices 
+Basic Matrix Types
+1. Row Matrix
+
+Only 1 row, any number of columns
+Order: 1 × n
+
+2. Column Matrix
+
+Only 1 column, any number of rows
+Order: m × 1
+
+3. Horizontal Matrix
+
+Number of rows < number of columns
+Example: 2 rows, 5 columns
+
+4. Vertical Matrix
+
+Number of rows > number of columns
+
+5. Rectangular Matrix
+
+m × n matrix where m ≠ n
+
+6. Square Matrix
+
+m × n matrix where m = n (equal rows and columns)
+
+Special Matrices
+7. Diagonal Matrix
+
+Must be square matrix
+All elements zero EXCEPT principal diagonal
+Principal diagonal = top-left to bottom-right
+
+8. Null/Zero Matrix
+
+ALL elements are zero
+Can be square or rectangular
+
+9. Identity Matrix
+
+Must be square
+Principal diagonal elements = 1
+All other elements = 0
+
+10. Symmetric Matrix
+
+Transpose of matrix = Original matrix
+Elements mirror across principal diagonal
+
+Determinant (|A|)
+
+Only for square matrices
+Gives a single number value
+
+For 2×2 matrix:
+|a b|
+|c d| = ad - bc
+For 3×3 matrix:
+
+Choose any row/column
+Multiply each element by its cofactor
+Add them up
+
+Singular Matrix: When determinant = 0
+Cofactor vs Minor
+Minor: Sub-determinant (remove row & column of element)
+Cofactor: Minor × (-1)^(i+j)
+
+i = row number
+j = column number
+
+Important Matrix Operations
+Adjoint (adj A):
+
+Step 1: Find cofactor matrix
+Step 2: Take transpose
+adj(A) = Transpose of Cofactor Matrix
+
+Inverse (A⁻¹):
+A⁻¹ = adj(A) / |A|
+
+Only possible if |A| ≠ 0
+
+More Special Types
+Orthogonal Matrix:
+
+A × A^T = Identity matrix
+Also: A^T = A⁻¹
+
+Idempotent Matrix:
+
+A² = A
+(Matrix × itself = same matrix)
+
+Involutory Matrix:
+
+A² = Identity matrix
+
+
+Key Tips:
+
+Practice determinant calculations
+Remember: transpose means rows become columns
+Most special matrices require square matrix
+These concepts are fundamental for AI/Neural Networks
